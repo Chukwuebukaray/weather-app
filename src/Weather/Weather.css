@@ -47,7 +47,7 @@
 }
 
 .error {
-    color: rgb(213, 89, 89);
+    color: rgb(255, 0, 0);
     font-size: 14px;
     margin-top: 5px;
     text-transform: capitalize;
@@ -130,6 +130,10 @@
 button{
     border: 0;
     border-radius: 50%;
+
+    &:disabled{
+        cursor: not-allowed;
+    }
 }
 
 button img{

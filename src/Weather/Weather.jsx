@@ -58,7 +58,7 @@ const Weather = () => {
         location: `${data.name}, ${data.sys.country}`,
         icon: `https://openweathermap.org/img/wn/${icon}@2x.png`,
       });
-      fetchBackgroundImage(`${data.weather[0].main} weather`);
+      fetchBackgroundImage(`${data.name} ${data.weather[0].main} weather`);
 
       const forecastResponse = await fetch(
         `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`
